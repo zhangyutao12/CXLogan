@@ -24,11 +24,18 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A706F9E521145B9D00F819F4 /* LoganTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A706F9E421145B9D00F819F4 /* LoganTests.m */; };
 		A706FA55212AAE3200F819F4 /* Logan.m in Sources */ = {isa = PBXBuildFile; fileRef = A706FA54212AAE3200F819F4 /* Logan.m */; };
-		A74F422F20D0FEAB0008E4F8 /* Logan.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A74F422E20D0FEAB0008E4F8 /* Logan.podspec */; };
+		A74F422F20D0FEAB0008E4F8 /* CXLogan.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A74F422E20D0FEAB0008E4F8 /* CXLogan.podspec */; };
 		A7C489B920F7512C001F74C0 /* libclogan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C489B320F750A1001F74C0 /* libclogan.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		360B49712A3C61E100CFAFB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7C489AD20F750A1001F74C0 /* clogan.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C23C1421723A1900588A19;
+			remoteInfo = "clogan-macOS";
+		};
 		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
@@ -79,7 +86,7 @@
 		A706FA53212AAE3200F819F4 /* Logan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logan.h; sourceTree = "<group>"; };
 		A706FA54212AAE3200F819F4 /* Logan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Logan.m; sourceTree = "<group>"; };
 		A74516AB20EF2EE200D2B849 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
-		A74F422E20D0FEAB0008E4F8 /* Logan.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Logan.podspec; path = ../../Logan.podspec; sourceTree = "<group>"; };
+		A74F422E20D0FEAB0008E4F8 /* CXLogan.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CXLogan.podspec; path = ../../CXLogan.podspec; sourceTree = "<group>"; };
 		A7C489AD20F750A1001F74C0 /* clogan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = clogan.xcodeproj; path = ../../../Logan/clogan.xcodeproj; sourceTree = "<group>"; };
 		DF957FBE944AABF7798BD54E /* Pods_Logan_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Logan_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,7 +119,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				A74F422E20D0FEAB0008E4F8 /* Logan.podspec */,
+				A74F422E20D0FEAB0008E4F8 /* CXLogan.podspec */,
 				6003F593195388D20070C39A /* Example for Logan-iOS */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -196,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				A7C489B320F750A1001F74C0 /* libclogan.a */,
+				360B49722A3C61E100CFAFB1 /* libclogan-macOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -291,6 +300,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		360B49722A3C61E100CFAFB1 /* libclogan-macOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libclogan-macOS.a";
+			remoteRef = 360B49712A3C61E100CFAFB1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		A7C489B320F750A1001F74C0 /* libclogan.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -306,7 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				A74F422F20D0FEAB0008E4F8 /* Logan.podspec in Resources */,
+				A74F422F20D0FEAB0008E4F8 /* CXLogan.podspec in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
