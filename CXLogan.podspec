@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
     s.version          = '1.0.0'
     s.summary          = 'Logan is a lightweight case logging system based on mobile platform.'
 
-    s.homepage         = 'https://github.com/Meituan-Dianping/Logan'
+    s.homepage         = 'https://github.com/zhangyutao12/CXLogan'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'jiangteng' => 'jiangteng.cn@gmail.com', 'yxiangnan' => 'yxiangnan@gmail.com', 'maxiaojun' => 'xiaojun_ma@qq.com'}
-    s.source           = { :git => 'https://github.com/Meituan-Dianping/Logan.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://github.com/zhangyutao12/CXLogan.git', :tag => s.version.to_s }
 
     s.ios.deployment_target = '8.0'
     s.osx.deployment_target = '10.9'
